@@ -1,5 +1,7 @@
 # OpenVPN on AWS with Terraform
 
+[![Terraform Checks](https://github.com/tarakaprabhuchinta/openvpn-terraform/actions/workflows/terraform-checks.yml/badge.svg)](https://github.com/tarakaprabhuchinta/openvpn-terraform/actions/workflows/terraform-checks.yml) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/tarakaprabhuchinta/openvpn-terraform/blob/main/LICENSE)
+
 This project provides a set of Terraform configurations to deploy an OpenVPN Access Server on AWS. It's designed to be a secure, reusable, and easy-to-use solution for creating your own VPN server.
 
 ## Features
