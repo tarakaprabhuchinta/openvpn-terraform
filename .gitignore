@@ -38,3 +38,4 @@ terraform.rc
 
 # Ignore terraform plans in .tfplan format
 *.tfplan
+tfplan
