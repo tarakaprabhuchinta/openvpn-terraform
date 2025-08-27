@@ -21,6 +21,27 @@ This project provides a set of Terraform configurations to deploy an OpenVPN Acc
 
 ## Getting Started
 
+### Quick Start (Recommended)
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/openvpn-terraform.git
+   cd openvpn-terraform
+   ```
+
+2. **Run the deployment script:**
+
+   ```bash
+   ./deploy.sh
+   ```
+
+   The script will guide you through the setup process, including creating the `terraform.tfvars` file if it doesn't exist.
+
+### Manual Deployment
+
+If you prefer to run the commands manually:
+
 1. **Clone the repository:**
 
    ```bash
@@ -43,23 +64,44 @@ This project provides a set of Terraform configurations to deploy an OpenVPN Acc
    instance_type          = "t3.micro"
    ```
 
+   You can also copy and modify the example file:
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   # Edit terraform.tfvars with your values
+   ```
+
 3. **Initialize Terraform:**
 
    ```bash
    terraform init
    ```
 
-4. **Review the plan:**
+4. **Create or select workspace:**
+
+   ```bash
+   terraform workspace new dev || terraform workspace select dev
+   ```
+
+5. **Review the plan:**
 
    ```bash
    terraform plan
    ```
 
-5. **Apply the configuration:**
+6. **Apply the configuration:**
 
    ```bash
    terraform apply
    ```
+
+### Deployment Script Options
+
+The `deploy.sh` script supports several options:
+
+- `./deploy.sh` or `./deploy.sh deploy` - Full deployment
+- `./deploy.sh plan` - Run terraform plan only
+- `./deploy.sh destroy` - Destroy the infrastructure
+- `./deploy.sh help` - Show help message
 
 ## Outputs
 

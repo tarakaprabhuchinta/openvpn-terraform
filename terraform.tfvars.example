@@ -1,0 +1,11 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and modify the values for your environment
+
+public_subnet_az   = "us-east-1a"
+private_subnet1_az = "us-east-1b"
+private_subnet2_az = "us-east-1c"
+ssh_public_key_path    = "~/.ssh/id_rsa.pub"
+ssh_key_name           = "my-openvpn-key"
+openvpn_admin_user     = "vpnadmin"
+openvpn_admin_password = "SecurePassword123!"
+instance_type          = "t3.micro"
